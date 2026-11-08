@@ -40,7 +40,7 @@ function App() {
       <header className="header">
         <div className="shell header__inner">
           <a className="brand" href="#top" aria-label="Академия Чудес — наверх">
-            <img src="/logo.svg" alt="" width={42} height={42} />
+            <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="" width={42} height={42} />
             <span className="brand__text">
               <span className="brand__name">Академия Чудес</span>
               <span className="brand__place">Братск · праздники и аниматоры</span>
@@ -77,7 +77,7 @@ function App() {
           </div>
           <div className="shell hero__content">
             <div className="hero__brand">
-              <img src="/logo.svg" alt="" width={56} height={56} />
+              <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="" width={56} height={56} />
               <div className="hero__brand-name">Академия Чудес</div>
             </div>
             <p className="hero__lead">

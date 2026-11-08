@@ -30,7 +30,9 @@ export const PATHWAYS = [
   { id: 'ethno', label: 'Этно / Сибирь', href: '#act-ethno' },
 ] as const
 
-export const HERO_IMAGE = '/images/hero-final.jpg'
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
+
+export const HERO_IMAGE = asset('images/hero-final.jpg')
 
 export const ACTS: Array<{
   id: ActId
@@ -49,7 +51,7 @@ export const ACTS: Array<{
     kicker: 'Акт I',
     priceFrom: 'от 7 000 ₽',
     stageClass: 'stage-bubbles',
-    image: '/images/act-shows-final.jpg',
+    image: asset('images/act-shows-final.jpg'),
     imageAlt: 'Научное шоу: плазменный шар и свет',
     highlights: ['«Где логика?»', 'Наука-шоу', 'Шоу гигантских мыльных пузырей'],
   },
@@ -59,7 +61,7 @@ export const ACTS: Array<{
     kicker: 'Акт II',
     priceFrom: 'от 3 600 ₽',
     stageClass: 'stage-heroes',
-    image: '/images/act-heroes-final.jpg',
+    image: asset('images/act-heroes-final.jpg'),
     imageAlt: 'Аниматор и ребёнок на празднике',
     highlights: [
       'Трансформер, Бэтмен, Человек-паук',
@@ -74,7 +76,7 @@ export const ACTS: Array<{
     kicker: 'Акт III',
     priceFrom: 'от 7 000 ₽',
     stageClass: 'stage-disco',
-    image: '/images/act-disco-final.jpg',
+    image: asset('images/act-disco-final.jpg'),
     imageAlt: 'Праздничный свет, конфетти и толпа',
     highlights: ['Неон-пати', 'Серебро-пати', 'Дискомен / Дискокостюмы', 'Дэнс-микс-макс'],
   },
@@ -84,7 +86,7 @@ export const ACTS: Array<{
     kicker: 'Акт IV',
     priceFrom: 'от 5 000 ₽',
     stageClass: 'stage-ethno',
-    image: '/images/act-ethno-final.jpg',
+    image: asset('images/act-ethno-final.jpg'),
     imageAlt: 'Детское творчество и яркий праздничный момент',
     highlights: [
       'Богатырь и конь',
